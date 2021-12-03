@@ -4,5 +4,13 @@
 ],
 
     "python.linting.pylintEnabled": true,
-    "python.linting.enabled": true
+    "python.linting.enabled": true,
+    "sqltools.connections": [
+        {
+            "previewLimit": 50,
+            "driver": "SQLite",
+            "name": "SpoonIt! API",
+            "database": "db.sqlite3"
+        }
+    ]
 }

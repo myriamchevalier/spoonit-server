@@ -1,0 +1,72 @@
+[
+    {
+        "model": "spoonit_api.spoon",
+        "pk": 1,
+        "fields": {
+            "number_of_spoons": 1
+        }
+    },
+    {
+        "model": "spoonit_api.spoon",
+        "pk": 2,
+        "fields": {
+            "number_of_spoons": 2
+        }
+    },
+    {
+        "model": "spoonit_api.spoon",
+        "pk": 3,
+        "fields": {
+            "number_of_spoons": 3
+        }
+    },
+    {
+        "model": "spoonit_api.spoon",
+        "pk": 4,
+        "fields": {
+            "number_of_spoons": 4
+        }
+    },
+    {
+        "model": "spoonit_api.spoon",
+        "pk": 5,
+        "fields": {
+            "number_of_spoons": 5
+        }
+    },
+    {
+        "model": "spoonit_api.spoon",
+        "pk": 6,
+        "fields": {
+            "number_of_spoons": 6
+        }
+    },
+    {
+        "model": "spoonit_api.spoon",
+        "pk": 7,
+        "fields": {
+            "number_of_spoons": 7
+        }
+    },
+    {
+        "model": "spoonit_api.spoon",
+        "pk": 8,
+        "fields": {
+            "number_of_spoons": 8
+        }
+    },
+    {
+        "model": "spoonit_api.spoon",
+        "pk": 9,
+        "fields": {
+            "number_of_spoons": 9
+        }
+    },
+    {
+        "model": "spoonit_api.spoon",
+        "pk": 10,
+        "fields": {
+            "number_of_spoons": 10
+        }
+    }
+]

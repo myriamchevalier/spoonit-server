@@ -1,0 +1,262 @@
+[
+    {
+        "model": "spoonit_api.task",
+        "pk": 1,
+        "fields": {
+            "name": "Fill dishwasher",
+            "category": 1,
+            "spoon" : 2,
+            "description": "Gather all dishes i your kitchen that can go in the dishwasher, fill it up, and give it a start.",
+            "created_by": 1,
+            "is_universal": true,
+            "is_active" : true
+        }
+    },
+    {
+        "model": "spoonit_api.task",
+        "pk": 2,
+        "fields": {
+            "name": "Clean your counter and stovetop",
+            "category": 1,
+            "spoon" : 3,
+            "description": "Take 10-15 minutes and wipe down your counter and stovetop. Don't worry about moving small appliances, just wipe around them.",
+            "created_by": 1,
+            "is_universal": true,
+            "is_active" : true
+        }
+    },
+    {
+        "model": "spoonit_api.task",
+        "pk": 3,
+        "fields": {
+            "name": "Fridge Raid!",
+            "category": 1,
+            "spoon" : 2,
+            "description": "Open your fridge and toss whatever is not good anymore, or things you know you will not use in time.",
+            "created_by": 1,
+            "is_universal": true,
+            "is_active" : true
+        }
+    },
+    {
+        "model": "spoonit_api.task",
+        "pk": 4,
+        "fields": {
+            "name": "Do dishes by hand",
+            "category": 1,
+            "spoon" : 4,
+            "description": "Gather all the dishes you want to wash, fill your sink with warm soapy water, and get to work! If you can't do all of it now, that's fine! Some is better than none.",
+            "created_by": 1,
+            "is_universal": true,
+            "is_active" : true
+        }
+    },
+    {
+        "model": "spoonit_api.task",
+        "pk": 5,
+        "fields": {
+            "name": "Sweep your kitchen floor",
+            "category": 1,
+            "spoon" : 2,
+            "description": "Grab your broom and give your kitchen floor a quick sweep.",
+            "created_by": 1,
+            "is_universal": true,
+            "is_active" : true
+        }
+    },
+    {
+        "model": "spoonit_api.task",
+        "pk": 6,
+        "fields": {
+            "name": "Mop your kitchen floor",
+            "category": 1,
+            "spoon" : 4,
+            "description": "Only the kitchen floor! No cheating!",
+            "created_by": 1,
+            "is_universal": true,
+            "is_active" : true
+        }
+    },
+    {
+        "model": "spoonit_api.task",
+        "pk": 7,
+        "fields": {
+            "name": "Clear and wipe down surfaces",
+            "category": 2,
+            "spoon" : 2,
+            "description": "Clear your bathroom counter, and give it a quick wipe down.",
+            "created_by": 1,
+            "is_universal": true,
+            "is_active" : true
+        }
+    },
+    {
+        "model": "spoonit_api.task",
+        "pk": 8,
+        "fields": {
+            "name": "Clean toilet bowl",
+            "category": 2,
+            "spoon" : 1,
+            "description": "Swish the inside of your toilet bowl. If you have energy, wipe down the external part.",
+            "created_by": 1,
+            "is_universal": true,
+            "is_active" : true
+        }
+    },
+    {
+        "model": "spoonit_api.task",
+        "pk": 9,
+        "fields": {
+            "name": "Bathtub/shower",
+            "category": 2,
+            "spoon" : 4,
+            "description": "Clean your bathtub/shower. If you have the option, use a product that does most of the work.",
+            "created_by": 1,
+            "is_universal": true,
+            "is_active" : true
+        }
+    },
+    {
+        "model": "spoonit_api.task",
+        "pk": 10,
+        "fields": {
+            "name": "Bathroom floor",
+            "category": 2,
+            "spoon" : 3,
+            "description": "Sweep your bathroom floor. Bonus: mop it.",
+            "created_by": 1,
+            "is_universal": true,
+            "is_active" : true
+        }
+    },
+    {
+        "model": "spoonit_api.task",
+        "pk": 11,
+        "fields": {
+            "name": "Clear a hot spot!",
+            "category": 3,
+            "spoon" : 2,
+            "description": "Take 5 minutes and clear one of your hot spots. Put things away in their place and throw away the trash. ",
+            "created_by": 1,
+            "is_universal": true,
+            "is_active" : true
+        }
+    },
+    {
+        "model": "spoonit_api.task",
+        "pk": 12,
+        "fields": {
+            "name": "Clothes giveaway",
+            "category": 3,
+            "spoon" : 3,
+            "description": "Choose one drawer or one closet and go through the clothes. Donate whatever you don't wear regularly. ",
+            "created_by": 1,
+            "is_universal": true,
+            "is_active" : true
+        }
+    },
+    {
+        "model": "spoonit_api.task",
+        "pk": 13,
+        "fields": {
+            "name": "Make your bed!",
+            "category": 4,
+            "spoon" : 2,
+            "description": "The title says it all.",
+            "created_by": 1,
+            "is_universal": true,
+            "is_active" : true
+        }
+    },
+    {
+        "model": "spoonit_api.task",
+        "pk": 14,
+        "fields": {
+            "name": "Clear your floor",
+            "category": 4,
+            "spoon" : 1,
+            "description": "Grab all the clothes on your floor and put them in the laundry hamper.",
+            "created_by": 1,
+            "is_universal": true,
+            "is_active" : true
+        }
+    },
+    {
+        "model": "spoonit_api.task",
+        "pk": 15,
+        "fields": {
+            "name": "Wash/dry a load of laundry",
+            "category": 5,
+            "spoon" : 4,
+            "description": "Put a load of laundry in the washer. If you tend to forget to transfer it in the dryer, set an alarm on your phone. Transfer your load in the dryer and start it. That's it!",
+            "created_by": 1,
+            "is_universal": true,
+            "is_active" : true
+        }
+    },
+    {
+        "model": "spoonit_api.task",
+        "pk": 16,
+        "fields": {
+            "name": "Fold a load of laundry",
+            "category": 5,
+            "spoon" : 6,
+            "description": "Clear a surface to fold your laundry, and get on it! You got this!",
+            "created_by": 1,
+            "is_universal": true,
+            "is_active" : true
+        }
+    },
+    {
+        "model": "spoonit_api.task",
+        "pk": 17,
+        "fields": {
+            "name": "Take a hot bath/shower",
+            "category": 6,
+            "spoon" : 1,
+            "description": "Take a moment for just you. A hot bath/shower, take your time and do whatever helps you relax in there.",
+            "created_by": 1,
+            "is_universal": true,
+            "is_active" : true
+        }
+    },
+    {
+        "model": "spoonit_api.task",
+        "pk": 18,
+        "fields": {
+            "name": "Move!",
+            "category": 6,
+            "spoon" : 3,
+            "description": "Go on a short walk, take some deep breaths, turn on some music and dance it out! Move your body!",
+            "created_by": 1,
+            "is_universal": true,
+            "is_active" : true
+        }
+    },
+    {
+        "model": "spoonit_api.task",
+        "pk": 19,
+        "fields": {
+            "name": "That one phone call...",
+            "category": 7,
+            "spoon" : 5,
+            "description": "You know, that phone call that you have been putting off? Get it out of the way.",
+            "created_by": 1,
+            "is_universal": true,
+            "is_active" : true
+        }
+    },
+    {
+        "model": "spoonit_api.task",
+        "pk": 20,
+        "fields": {
+            "name": "Errands",
+            "category": 7,
+            "spoon" : 5,
+            "description": "",
+            "created_by": 1,
+            "is_universal": true,
+            "is_active" : true
+        }
+    }
+]

@@ -1,0 +1,65 @@
+[
+    {
+        "model": "spoonit_api.category",
+        "pk": 1,
+        "fields": {
+            "label": "Kitchen"
+        }
+    },
+    {
+        "model": "spoonit_api.category",
+        "pk": 2,
+        "fields": {
+            "label": "Bathroom"
+        }
+    },
+    {
+        "model": "spoonit_api.category",
+        "pk": 3,
+        "fields": {
+            "label": "Decluttering"
+        }
+    },
+    {
+        "model": "spoonit_api.category",
+        "pk": 4,
+        "fields": {
+            "label": "Bedroom"
+        }
+    },
+    {
+        "model": "spoonit_api.category",
+        "pk": 5,
+        "fields": {
+            "label": "Laundry"
+        }
+    },
+    {
+        "model": "spoonit_api.category",
+        "pk": 6,
+        "fields": {
+            "label": "Self-Care"
+        }
+    },
+    {
+        "model": "spoonit_api.category",
+        "pk": 7,
+        "fields": {
+            "label": "Them Dreaded Tasks"
+        }
+    },
+    {
+        "model": "spoonit_api.category",
+        "pk": 8,
+        "fields": {
+            "label": "Animals"
+        }
+    },
+    {
+        "model": "spoonit_api.category",
+        "pk": 9,
+        "fields": {
+            "label": "Children"
+        }
+    }
+]

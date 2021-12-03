@@ -9,4 +9,5 @@ class Task(models.Model):
     description = models.TextField()
     created_by = models.ForeignKey(User, on_delete=models.CASCADE)
     is_universal = models.BooleanField()
+    is_active = models.BooleanField(default=True)
     spoonies = models.ManyToManyField(User, through='TaskList', related_name='tasks')

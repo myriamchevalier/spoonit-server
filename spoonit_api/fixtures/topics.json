@@ -1,0 +1,65 @@
+[
+    {
+        "model": "spoonit_api.topic",
+        "pk": 1,
+        "fields": {
+            "label": "General"
+        }
+    },
+    {
+        "model": "spoonit_api.topic",
+        "pk": 2,
+        "fields": {
+            "label": "Asking for help"
+        }
+    },
+    {
+        "model": "spoonit_api.topic",
+        "pk": 3,
+        "fields": {
+            "label": "Self-Care"
+        }
+    },
+    {
+        "model": "spoonit_api.topic",
+        "pk": 4,
+        "fields": {
+            "label": "Bedroom"
+        }
+    },
+    {
+        "model": "spoonit_api.topic",
+        "pk": 5,
+        "fields": {
+            "label": "Laundry"
+        }
+    },
+    {
+        "model": "spoonit_api.topic",
+        "pk": 6,
+        "fields": {
+            "label": "Kitchen"
+        }
+    },
+    {
+        "model": "spoonit_api.topic",
+        "pk": 7,
+        "fields": {
+            "label": "Them Dreaded Tasks"
+        }
+    },
+    {
+        "model": "spoonit_api.topic",
+        "pk": 8,
+        "fields": {
+            "label": "Bathroom"
+        }
+    },
+    {
+        "model": "spoonit_api.topic",
+        "pk": 8,
+        "fields": {
+            "label": "Decluttering"
+        }
+    }
+]

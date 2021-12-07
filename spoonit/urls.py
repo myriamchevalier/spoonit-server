@@ -18,10 +18,13 @@ from django.conf.urls import include
 from spoonit_api.views import register_user, login_user
 from django.urls import path
 from rest_framework import routers
-from spoonit_api.views import TaskView
+from spoonit_api.views import TaskView, CategoryView, SpoonView
+
 
 router = routers.DefaultRouter(trailing_slash=False)
 router.register(r'tasks', TaskView, 'task')
+router.register(r'categories', CategoryView, 'category')
+router.register(r'spoons', SpoonView, 'spoon')
 
 urlpatterns = [
     path('', include(router.urls)),

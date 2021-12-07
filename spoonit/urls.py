@@ -21,7 +21,7 @@ from rest_framework import routers
 from spoonit_api.views import TaskView
 
 router = routers.DefaultRouter(trailing_slash=False)
-router.register('tasks', TaskView, 'task')
+router.register(r'tasks', TaskView, 'task')
 
 urlpatterns = [
     path('', include(router.urls)),

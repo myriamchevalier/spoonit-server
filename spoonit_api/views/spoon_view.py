@@ -15,3 +15,4 @@ class SpoonView(ViewSet):
 
         serializer = SpoonSerializer(spoons, many=True)
         return Response(serializer.data)
+

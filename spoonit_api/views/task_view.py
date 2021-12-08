@@ -2,6 +2,7 @@ from rest_framework.viewsets import ViewSet
 from rest_framework.response import Response
 from spoonit_api.models import Task
 from spoonit_api.serializers.task_serializer import TaskSerializer
+from django.contrib.auth.models import User
 from rest_framework.decorators import action
 from random import choice
 
@@ -14,8 +15,14 @@ class TaskView(ViewSet):
         """
         tasks = Task.objects.all()
 
+        is_universal = request.query_params.get('is_universal', None)
         category = request.query_params.get('category', None)
         spoon = request.query_params.get('spoon', None)
+
+        if is_universal is not False:
+            tasks = tasks.filter(is_universal = True )
+        elif is_universal is False:
+            tasks = tasks.filter(is_universal = False)
 
         if spoon is not None:
             # to filter through all the tasks, must filter through the result of first query.

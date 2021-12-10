@@ -1,4 +1,5 @@
-from rest_framework.exceptions import ValidationError
+from django.core.exceptions import ValidationError
+from django.http.response import HttpResponseNotFound
 from rest_framework.viewsets import ViewSet
 from rest_framework.response import Response
 from rest_framework import status
@@ -51,9 +52,9 @@ class TipView(ViewSet):
         """
         user_tip = Tip.objects.filter(spoonie__id=request.auth.user.id)
         tip = user_tip.get(pk=pk)
-
+        topic = Topic.objects.get(pk=request.data['topicId'])
         try :
-            tip.topic = Topic.objects.get(pk=request.data['TopicId'])
+            tip.topic = topic
             tip.content = request.data['content']
             tip.spoonie = request.auth.user
             tip.save()
@@ -81,3 +82,15 @@ class TipView(ViewSet):
         except Exception as ex:
             return Response({'message': ex.args[0]}, status=status.HTTP_500_INTERNAL_SERVER_ERROR)
 
+    def retrieve(self, request, pk=None):
+        """Handle GET requests to get a single tip
+        
+        Returns:
+            Response -- JSON serialized tip
+        """
+        try:
+            tip = Tip.objects.get(pk=pk)
+            serializer = TipSerializer(tip)
+            return Response(serializer.data)
+        except Exception as ex:
+            return HttpResponseNotFound(ex)

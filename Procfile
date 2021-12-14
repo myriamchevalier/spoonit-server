@@ -1,0 +1,1 @@
+web: gunicorn spoonit-server.wsgi --log-file -

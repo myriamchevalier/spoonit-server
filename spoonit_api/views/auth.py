@@ -5,6 +5,8 @@ from rest_framework.decorators import api_view, permission_classes
 from rest_framework.permissions import AllowAny
 from rest_framework.response import Response
 
+from spoonit_api.serializers.user_serializer import UserSerializer
+
 @api_view(['POST'])
 @permission_classes([AllowAny])
 def login_user(request):
@@ -31,6 +33,7 @@ def login_user(request):
         data = {'valid': False}
         return Response(data)
 
+
 @api_view(['POST'])
 @permission_classes([AllowAny])
 def register_user(request):
@@ -51,3 +54,11 @@ def register_user(request):
 
     data = { 'token' : token.key }
     return Response(data)
+
+@api_view(['GET'])
+def get_current_user(request):
+
+    user = User.objects.get(pk=request.auth.user.id)
+
+    serializer = UserSerializer(user, many=False)
+    return Response(serializer.data)

@@ -15,7 +15,7 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.conf.urls import include
-from spoonit_api.views import register_user, login_user
+from spoonit_api.views import register_user, login_user, get_current_user
 from django.urls import path
 from rest_framework import routers
 from spoonit_api.views import TaskView, CategoryView, SpoonView, TopicView, TipView
@@ -32,6 +32,7 @@ urlpatterns = [
     path('', include(router.urls)),
     path('register', register_user),
     path('login', login_user),
+    path('get-user', get_current_user),
     path('api-auth', include('rest_framework.urls', namespace='rest_framework')),
     path('admin/', admin.site.urls),
 ]
